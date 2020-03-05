@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+    
+
+        <title>Page Title</title>
+
+        
+
+        
+
+    </head>
+
+    
+
+    <body>
+
+    
+
+  <script>
+
+  function gotohome(){
+
+document.getElementById("Home").style.display="block" ;
+
+document.getElementById("Info").style.display="none";
+
+document.getElementById("Order").style.display="none" ;
+
+document.getElementById("Pics").style.display="none";
+
+}
+
+function gotoinfo(){
+
+document.getElementById("Home").style.display="none" ;
+
+document.getElementById("Info").style.display="block";
+
+document.getElementById("Order").style.display="none" ;
+
+document.getElementById("Pics").style.display="none";
+
+}
+
+function gotopics(){
+
+document.getElementById("Home").style.display="none" ;
+
+document.getElementById("Info").style.display="none";
+
+document.getElementById("Order").style.display="none" ;
+
+document.getElementById("Pics").style.display="block";
+
+}
+
+function gotoorder(){
+
+document.getElementById("Home").style.display="none" ;
+
+document.getElementById("Info").style.display="none";
+
+document.getElementById("Order").style.display="block" ;
+
+document.getElementById("Pics").style.display="none";
+
+}
+
+var names=["Chyrs","The Divine","Open Heart","Happy Birthday Bouquet","Jean-Marc Nattier","Funeral Roses"];
+
+var images=["https://www.flowermeaning.com/flower-pics/Chrysanthemum-Meaning.jpg","https://no12divineflowers.co.uk/wp-content/gallery/weddings/12239548_1099536553403865_5867754096311327247_n.jpg","https://www.kensingtonflowers.co.uk/wp-content/uploads/2018/05/White-open-heart.jpg.webp","https://cdn11.bigcommerce.com/s-npr8amk5dx/images/stencil/1280x1280/products/923/818/BD2E_600x600__86355.1506604855__64326.1506605078.jpg?c=2&imbypass=on","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ84ygdaZOEGtMd3zwIFcDaEKtf5-UPE4fNmJwm89EJkO3LC67HJlv6LZ7uL1qH7KYbTBvAr7Ka&usqp=CAc","https://www.theflowerexpert.com/media/images/giftflowers/flowersandoccassions/anniversaryflowers/anniversary2.jpg"];
+
+var num = 0;
+
+function prev() {
+
+    var slider = document.getElementById('slider');
+
+    num--;
+
+    if(num < 0) {
+
+        num = images.length-1;
+
+    }
+
+    slider.src = images[num];
+
+}
+
+setInterval(prev,1500);    
+
+      
+
+  </script>
+
+  
+
+  <style>
+
+      body {
+
+width:100vw; 
+
+   
+
+height:100vh;
+
+}
+
+#header{
+
+Position:fixed;   
+
+top:0%; 
+
+left:0%;
+
+height:20vh;
+
+width:100vw;
+
+background-color:rgb(204,102,0);
+
+background-image: linear-gradient(to right , #ff512f, #dd2476); 
+
+}
+
+#title{
+
+position:fixed; 
+
+ 
+
+top:5.5%; 
+
+left:10%; 
+
+background-color:rgb(255,204,0);
+
+width:50vw;
+
+height:8vh;
+
+border-radius:60px;
+
+font-size:1em;
+
+color:white;
+
+text-align:justify ;
+
+}
+
+#name{
+
+ position:fixed;
+
+   
+
+top:8%; 
+
+left:16%;
+
+ font-size:0.8em;
+
+ 
+
+color:white;
+
+text-align:justify ; 
+
+ 
+
+font-family:Arial;
+
+font-style:bold;
+
+}
+
+#motto1{
+
+position:fixed;  
+
+ 
+
+top:19.6%; 
+
+left:0%;
+
+background-color:rgb(51,153,255);
+
+width:50vw;
+
+height:10vw;
+
+color:yellow;
+
+font-family:courier new;
+
+font-style:bold;
+
+font-spacing:0px;
+
+display:none;
+
+}
+
+#motto2{
+
+position:absolute; 
+
+  
+
+top:20%;
+
+ 
+
+left:42%;
+
+background-color:rgb(204,102,0);
+
+width:20vw;
+
+height:10vw;
+
+color:yellow;
+
+font-family:courier new;
+
+border-radius:20px;
+
+display:none;
+
+}
+
+#footer{
+
+Position:fixed; 
+
+  
+
+bottom:0%; 
+
+left:0%;
+
+height:15vh;
+
+width:100vw;
+
+background-color:rgb(204,102,0); 
+
+   
+
+background-image: linear-gradient(to right , #ff512f, #dd2476); 
+
+}
+
+#frame1{
+
+Position:fixed; 
+
+  
+
+top:33%; 
+
+left:5%;
+
+height:25vh;
+
+width:30vw;
+
+background-color:rgb(51,153,255);
+
+ 
+
+   background-image: linear-gradient(to right , #ff512f, #dd2476); 
+
+   
+
+}
+
+#frame2{
+
+Position:fixed;  
+
+ 
+
+top:36%; 
+
+left:40%;
+
+height:25vh;
+
+width:30vw;
+
+background-color:rgb(51,153,255);
+
+ 
+
+background-image: linear-gradient(to right , #ff512f, #dd2476);   
+
+ 
+
+}
+
+#frame3{
+
+Position:fixed;  
+
+ 
+
+top:32%; 
+
+left:75%;
+
+height:25vh;
+
+width:30vw;
+
+background-color:rgb(51,153,255); 
+
+  background-image: linear-gradient(to right , #ff512f, #dd2476); 
+
+    
+
+}
+
+#dialogue{
+
+position:fixed;
+
+outline-style:dashed; 
+
+   
+
+outline-color:red;
+
+outline-width:2px;
+
+top:65%;
+
+left:20%;
+
+height:15vh;
+
+width:60vw;
+
+font-family:Courier;
+
+}
+
+#image1{
+
+position:fixed; 
+
+ 
+
+top:38%;  
+
+left:13%;
+
+width:14vw;
+
+height:14vh;
+
+}
+
+#image2{
+
+position:fixed; 
+
+ 
+
+top:42%; 
+
+ 
+
+left:47%;
+
+width:14vw;
+
+height:14vh;
+
+}
+
+#image3{
+
+position:fixed; 
+
+ 
+
+top:38%;
+
+  
+
+left:82%;
+
+width:14vw;
+
+height:14vh;
+
+}
+
+#Homebut{
+
+position:fixed;
+
+background-color:rgb(51,153,255); 
+
+ 
+
+top:87%; 
+
+left:7%;
+
+width:15vw; 
+
+height:5vh;
+
+border-radius:5px;
+
+color:red;
+
+font-family:courier;
+
+background-image: linear-gradient(to right , orange, red); 
+
+}
+
+#Infobut{
+
+position:fixed;
+
+background-color:rgb(51,153,255); 
+
+ 
+
+top:87%; 
+
+left:30%;
+
+width:15vw; 
+
+height:5vh;
+
+border-radius:5px;
+
+color:red;
+
+font-family:courier;
+
+background-image: linear-gradient(to right , orange, red); 
+
+}
+
+#Galleriesbut{
+
+position:fixed;
+
+background-color:rgb(51,153,255); 
+
+ 
+
+top:87%;
+
+ 
+
+left:53%;
+
+width:15vw;
+
+ 
+
+height:5vh;
+
+border-radius:5px;
+
+color:red;
+
+font-family:courier;
+
+background-image: linear-gradient(to right , orange, red); background-image: linear-gradient(to right , orange, red);
+
+ 
+
+}
+
+#Orderbut{
+
+position:fixed;
+
+background-color:rgb(51,153,255);  
+
+top:87%; 
+
+left:76%;
+
+width:15vw; 
+
+height:5vh;
+
+border-radius:5px;
+
+color:red;
+
+font-family:courier;
+
+background-image: linear-gradient(to right , orange, red); 
+
+}
+
+#Info{
+
+width:97vw;
+
+height:60vh;
+
+position:fixed;
+
+top:25vh;
+
+left:1vh;
+
+background-color:white;    
+
+display:none;
+
+outline-style:dashed;    
+
+outline-color:red;
+
+outline-width:2px;
+
+font-family:Courier;
+
+}
+
+#Pics{
+
+width:97vw;
+
+height:60vh;
+
+position:fixed;
+
+top:20vh;
+
+left:1vh;
+
+background-color:white;    
+
+display:none;
+
+outline-style:dashed;    
+
+outline-color:red;
+
+outline-width:2px;
+
+font-family:Courier;
+
+}
+
+#slider{
+
+   position:fixed;  
+
+top:42%;  
+
+left:30%;
+
+width:40vw;
+
+height:14vh; 
+
+    
+
+}
+
+#Order{
+
+display:none;
+
+width:40vw;
+
+    height:10vh;
+
+    position:fixed;
+
+    top:20vh;
+
+    left:1vh;   
+
+    font-size:1em;
+
+    
+
+    
+
+}
+
+      
+
+  </style>  
+
+    
+
+    
+
+    <div id="header">
+
+        
+
+    </div>
+
+       
+
+    <div id="title">
+
+        
+
+    <div id="name">
+
+    
+
+    Eflorist
+
+    
+
+    </div>
+
+        
+
+    </div>
+
+    
+
+    <div id="motto2">
+
+        
+
+    </div> 
+
+    
+
+    <div id="motto1">
+
+    Bringing out the beauty in nature
+
+    </div>
+
+    
+
+<div id="footer"></div>
+
+<div id="Home">
+
+<div id="frame1"></div>
+
+<div id="frame2"></div>
+
+<div id="frame3"></div>
+
+<div id= "dialogue"> Fresh Flowers for every occasion: <li>Wedding</li><li>Funerals</li><li>Every occasion</li></div>
+
+<img src="https://www.flyingflowers.co.uk/ff_images/product/8466/FC93621F.jpg?product" id="image1">
+
+<img src="https://www.flyingflowers.co.uk/ff_images/product/1714/FC91151FQ12020.jpg?product" id="image2">
+
+<img src="https://cdn.blossominggifts.com/media/catalog/product/cache/7/thumbnail/100x/9df78eab33525d08d6e5fb8d27136e95/r/a/rainbow_roses_3_2.jpg" id="image3">
+
+</div>
+
+<div id="Homebut" onclick="gotohome();">Home</div>
+
+<div id="Infobut" onclick="gotoinfo();">About</div>
+
+<div id="Orderbut" onclick="gotoorder();">Order</div>
+
+<div id="Galleriesbut" onclick="gotopics();">Pics</div>
+
+  <div id="Info">Middleton Flowers <br /> <br /> Adress: XFN VNE <br /><br />Tel:08945680562 <br /><br />E-mail: Midtonflower@gmail.com <br /><br />Order-online:Www.getemflowers.com <br /><br />Services <br /> <br /><li>Flowers for weddings</li> <br /> <li>Flowers for  funerals</li> <br /><li>All ocassions</li><br />Get a 50% discount off your first 2 purchases!!</div>    
+
+  
+
+  
+
+  <div id="Pics">
+
+      
+
+            <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" width="200px" height="100px"/>
+
+            
+
+            </div>
+
+  
+
+  
+
+  <div id="Order">
+
+      
+
+<a href="https://www.eflorist.co.uk/?ds_rl=1256598&ds_rl=1256601&ds_rl=1256637&gclid=CjwKCAiA44LzBRB-EiwA-jJipFeWIcF7fvCCXUdz2bS-50D9IWqHI9wUt0Cs7TOpz2UGhR53h1aKFhoCb34QAvD_BwE&gclsrc=aw.ds">Eflorist</a>      
+
+  </div>
+
+  
+
+  
+
+    
+
+    </body>
+
+    
+
+</html>
